@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Warung Bu 'R'</title>
+		<style type="text/css">
+			header, section, footer, aside, nav, article, figcaption {
+				display: block;}
+			body {
+				color: #666666;
+				background-color: #f9f8f6;
+				background-image: url("img/bg.jpg");
+				background-position: center;
+				font-family: Georgia, Times, serif;
+				line-height: 1.4em;
+				margin: 0px;}
+			.wrapper {
+				width: 940px;
+				margin: 20px auto 20px auto;
+				border: 2px solid white;
+				background-color: black;}
+				
+			header {
+				height: 200px;
+				}
+			h1 {
+				color: red;
+				width: 100%;
+				text-align: center;
+				margin: 100px auto;
+				}
+			nav, footer {
+				clear: both;
+				color: #ffffff;
+				background-color: #aeaca8;
+				height: 50px;}
+			nav ul {
+				margin: 0px;
+				padding: 15px 0px 5px 30px;}
+			nav li {
+				display: inline;
+				margin-right: 40px;}
+			nav li a {
+				color: #ffffff;}
+			nav li a:hover, nav li a.current {
+				color: #000000;}
+			section.courses {
+				float: left;
+				width: 659px;
+				border-right: 1px solid #eeeeee;}
+			article {
+				clear: both;
+				overflow: auto;
+				width: 100%;}
+			hgroup {
+				margin-top: 40px;}
+			figure {
+				float: left;
+				width: 290px;
+				height: 220px;
+				padding: 5px;
+				margin: 20px;
+				border: 1px solid #eeeeee;}
+			figcaption {
+				font-size: 90%;
+				text-align: left;}
+			aside {
+				width: 230px;
+				float: left;
+				padding: 0px 0px 0px 20px;}
+			aside section a {
+				display: block;
+				padding: 10px;
+				border-bottom: 1px solid #eeeeee;}
+			aside section a:hover {
+				color: #985d6a;
+				background-color: #efefef;}
+			a {
+				color: #de6581;
+				text-decoration: none;}
+			h1, h2, h3 {
+				font-weight: normal;}
+			h2 {
+				margin: 10px 0px 5px 0px;
+				padding: 0px;}
+			h3 {
+				margin: 0px 0px 10px 0px;
+				color: #de6581;}
+			aside h2 {
+				padding: 30px 0px 10px 0px;
+				color: #de6581;}
+			footer {
+				font-size: 80%;
+                padding: 7px 0px 0px 20px;}
+            .act-btn{
+                background: green;
+                display: block;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                color: whitesmoke;
+                font-size: 30px;
+                font-weight: bold;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                text-decoration: none;
+                transition: ease all 0.3s;
+                position: fixed;
+                right: 30px;
+                bottom: 30px;
+            }
+			img{
+				width: 101%;
+			}
+			button{
+				background-color: white-space: nowrap;;
+			}
+			.courses article figure {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+			footer{
+				text-align: center;
+				font-size: medium;
+			}
+		</style>
+
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<h1>Warung Bu 'R'</h1>
+				<nav>
+					<ul>
+						<li><a href="index.html">Daftar masakan</a></li>
+						<li><a href="katering.html">Katering</a></li>
+						<li><a href="tentang.html">Tentang</a></li>
+					</ul>
+				</nav>
+			</header>
+			<section class="courses">
+				<article>
+					<figure>
+						<img src="img/rendang.jpg" />
+					</figure>
+					<hgroup>
+						<h2>Rendang</h2>
+					</hgroup>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio officia ex a numquam molestias, sed, alias blanditiis magni, hic delectus ducimus provident non. Eveniet amet blanditiis voluptate necessitatibus magnam? Perferendis..</p>
+					<button onclick="Cekrendang()">Harga</button>
+					<h2 id="hasil"></h2>
+				</article>    
+				<article>
+					<figure>
+						<img src="img/pecel.jpeg" alt="pecel" />
+					</figure>
+					<hgroup>
+						<h2>Pecel Madiun</h2>
+					</hgroup>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet nulla illo adipisci enim, rem dolor corrupti cupiditate expedita at necessitatibus, sapiente nostrum. Nobis, sequi illo? Minus provident alias eum velit..</p>
+					<button onclick="Cekpecel()">Harga</button>
+					<h2 id="hasilp"></h2>
+                </article>
+                <article>
+					<figure>
+						<img src="img/ayam.jpg" alt="pecel" />
+						
+					</figure>
+					<hgroup>
+						<h2>Ayam Penyet</h2>
+					</hgroup>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aspernatur ad repellat, quibusdam sed dolore ipsum ducimus debitis fuga est, voluptates veniam odio molestiae aliquid, tenetur beatae! Atque, reiciendis voluptatibus?.</p>
+					<button onclick="Cekayam()">Harga</button>
+					<h2 id="hasila"></h2>
+                </article>   
+                <article>
+					<figure>
+						<img src="img/udang.jpg" alt="pecel" />
+						
+					</figure>
+					<hgroup>
+						<h2>Udang Asem Manis</h2>
+					</hgroup>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis voluptate laborum non! Iure repellendus, vero error deserunt dignissimos eaque perspiciatis eligendi porro dolore quod praesentium, assumenda facere, sint a! Vitae?.</p>
+					<button onclick="Cekudang()">Harga</button>
+					<h2 id="hasilu"></h2>
+					
+                </article>     
+			</section>
+			<aside>
+				<section class="popular-recipes">
+					<h2>Masakan Populer</h2>
+					<a href="">Sayur Sop</a>
+					<a href="">Sayur Asem</a>
+					<a href="">Sayur Lodeh</a>
+					<a href="">Sayur Bayam</a>
+				</section>
+				<section class="contact-details">
+					<h2>Profil</h2>
+					<h4>Nama : Raden Bintang</h4>
+					<h4>Alamat : Bogor</h4>
+					<h3>*Note cara pesan klik tombol plus disebelah pojok bawah kanan!</h3>
+					
+                </section>
+			</aside>
+			<footer>
+				&copy; 2020 RadenBintang
+			</footer>
+		</div><!-- .wrapper -->
+		<a href="https://api.whatsapp.com/send?phone=6285156986191" class="act-btn" target="blank">
+			+
+		</a>
+    </body>
+	<script>
+		function Cekrendang(){
+			var konfirmasi = confirm("anda ingin lihat harga makanan ini?");
+			var text = "";
+			
+			if(konfirmasi === true) {
+				text = "35.000";
+			}else{
+				text = "";
+			}
+			
+			document.getElementById("hasil").innerHTML = text;
+		}
+	</script>
+		<script>
+			function Cekpecel(){
+				var konfirmasi = confirm("anda ingin lihat harga makanan ini?");
+				var text = "";
+				
+				if(konfirmasi === true) {
+					text = "10.000";
+				}else{
+					text = "";
+				}
+				
+				document.getElementById("hasilp").innerHTML = text;
+			}
+		</script>
+			<script>
+				function Cekayam(){
+					var konfirmasi = confirm("anda ingin lihat harga makanan ini?");
+					var text = "";
+					
+					if(konfirmasi === true) {
+						text = "13.000";
+					}else{
+						text = "";
+					}
+					
+					document.getElementById("hasila").innerHTML = text;
+				}
+			</script>
+				<script>
+					function Cekudang(){
+						var konfirmasi = confirm("anda ingin lihat harga makanan ini?");
+						var text = "";
+						
+						if(konfirmasi === true) {
+							text = "25.000";
+						}else{
+							text = "";
+						}
+						
+						document.getElementById("hasilu").innerHTML = text;
+					}
+				</script>
+</html>
